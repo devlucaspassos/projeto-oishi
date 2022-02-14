@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"Shenttpuro";
+    src: url(../fonts/Shenttpuro\ Font.ttf);
+}
+:root {
+    --color1: #2E2E2E;
+    --color2: #F4FFF8;
+    --color3: #F3A712;
+    --color4: #e42615;
+    --font1: "Shenttpuro";
+}
+/* general properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/background-logo.png) repeat-x;
+    background-color: rgb(218, 218, 218);
+    font-size: 16px;
+}
+div#content {
+    margin: auto;
+    width: 1200px;
+}
+h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    color: black;
+}
+h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+/* header properties */
+header h1 {
+    margin: 3px;
+}
+div#logo {
+    float: left;
+    height: 120px;
+}
+div#logo a {
+    height: 140px;
+    width: 500px;
+    display: block;
+    background: url(../img/Untitled-1.png) no-repeat;
+    text-indent: -9999px;
+}
+/* menu properties */
+nav {
+    float: right;
+    padding: 20px 20px 0px 0px;
+}
+nav ul {
+    list-style-type: none;
+    padding-right: 50px;
+}
+nav ul li {
+    padding: 0px 10px;
+    float: left;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 7px;
+    text-transform: uppercase;
+    font-family: "Shenttpuro";
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+}
+nav ul li a:hover {
+    font-size: 1.1em;
+    color: var(--color3);
+    transition: 0.3s;
+    background-color: var(--color4);
+    border-radius: 5px 20px 5px 20px;
+}
+div#main-content {
+    clear: both;
+}
+/* main content properties */
+main {
+    float: left;
+    margin: 45px 0px 0px 25px;
+    width: 825px;
+}
+aside { 
+    float: right;
+    margin: 45px 25px 105px 0px;
+    width: 375px;
+}
+article {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.drinks {
+    width: 400px;
+    float: left;
+}
+.gallery {
+    width: 400px;
+    float: left;
+    margin-left: 25px;
+}
+.map {
+    width: 375px;
+    height: 220px;
+}
+/* footer properties */
+footer {
+    clear: both;
+    background-color: var(--color1);
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    height: 50px;
+    padding: 15px 10px 10px 10px;
+}
